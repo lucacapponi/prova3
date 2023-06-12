@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Music/About</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <script src="artisti.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Raleway:wght@800&family=Rubik+Puddles&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--TITLE di about -->
+  <div class="title">
+    <h1>ALMA <br> MUSIC</h1>
+</div>
+
+  <!--SOTTOTITOLO di about-->
+  </div> 
+    <div class="panel">
+        <div class="container">
+          <p class="watch fade-in intro">Music by students</p>
+          <h2 class="watch fade-in title-big">For students.</h2>
+        </div>
+    </div>
+   </div>
+
+    <div id="box-2">
+      <div class="box-2word">
+      <h2 class="watch fade-out title-big-2">Alma Music</h2>
+      <p class="watch fade-back paragrafo"> Un modo per conoscere e far conoscere nuova musica. </p>
+      </div>
+      <img src="images/unibologna.png" alt="" id="img-logo">
+    </div>
+
+        
+
+        <!---
+        <div id="flexBox" class="flex">
+          <div class="flexCol">
+              <h3 class="flexTitle" style="color: white; font-weight: 600;">Lorem</h3>
+              <div class="flexLink">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+          </div>
+      
+          <div class="flexCol">
+            <h3 class="flexTitle" style="color: white; font-weight: 600;">Lorem</h3>
+            <div class="flexLink">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+      
+          <div class="flexCol">
+            <h3 class="flexTitle" style="color: white; font-weight: 600;">Lorem</h3>
+            <div class="flexLink">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div> -->
+  
+      <div id="box-3">
+        <div id="boxparagrafo-3">
+          <h2 class="watch fade-bro title-big-3">Alma Mater</h2>
+          <p class="watch fade-back paragrafo-3">L'accesso al sito è consentito esclusivamente agli studenti dell'Alma Mater</p>
+        </div>   
+          <img src="images/bologna-torri.png" alt="" class="fade-stro">   
+      </div>
+
+      
+        <section class="top-nav">
+          <div id="title">
+            ALMA MUSIC
+          </div>
+          <div class='menu-button'></div>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artisti.html" >Artisti</a></li>
+          <li><a href="upload2.html">Upload</a></li>
+          <li ><a class="active">About</a></li>
+        </ul>
+      </section>
+     
+
+  
+
+  
+
+            <!-- JS di apple-->
+            <script>
+              var elements_to_watch = document.querySelectorAll('.watch');
+
+              var callback = function(items) {
+                items.forEach ((item) => {
+                  if(item.isIntersecting) {
+                    item.target.classList.add("in-page");
+                  } else {
+                    item.target.classList.remove ("in-page");
+                  }
+                });
+               }
+                
+              var observer = new IntersectionObserver(callback, {threshold:0.6});
+
+              elements_to_watch.forEach((element) => {
+                observer.observe(element);
+            });
+            </script>
+
+
+</body>
+</html>

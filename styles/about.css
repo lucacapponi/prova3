@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    border: 3px solid red;
+    background-image: url(https://i.gifer.com/ODz.gif);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 250px;
+    width: auto;
+    height: 68vh;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/* ANIMATION */
+
+/*panel*/
+.panel {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;;  
+}
+
+    /*container*/
+.container {
+    width: 100%; 
+    margin-top: 0px;
+    z-index: 2;
+    text-align: center;
+}
+
+.intro {
+    padding-top: 60px;
+    font-size: 30px; 
+    font-weight: bold;
+    color: #862c25;
+}
+
+.title-big {
+    font-size: 8rem; 
+    margin-top: 0;
+    color:#AC3A31;
+}
+
+.fade-in {opacity: 0; transform: translateY(10vh); transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.fade-in.in-page {opacity:1; transform: translateY(0vh);}
+
+
+        /*box-2*/
+#box-2 {
+    border: 2px solid yellow;
+    background-color: white;
+    display: inline-block;
+    height: 825px
+}
+
+.box-2word {
+    border: 2px dotted purple;
+    width: 500px;
+    height: 400px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 200px;
+}
+
+.box-2word h2 {
+    font-size: 70px;
+    color: rgb(122, 122, 122)
+}
+
+.box-2word p {
+    font-size: 40px;
+    color: #454545;
+}
+
+#img-logo {
+    width: 100vh;
+    position:relative;
+    left: -40vw;
+    top: -600px;
+    border: 2px dotted purple;
+}
+
+            /*boxcosa*/
+
+
+.fade-out {opacity: 0; transform: translateY(10vh); transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.fade-out.in-page {opacity:1; transform: translateY(0vh);}
+
+.fade-back {opacity: 0; transform: translateY(10vh); transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.fade-back.in-page {opacity:1; transform: translateY(0vh);}
+
+
+
+
+
+
+
+
+/* BOX-3 */
+#box-3 {
+    background-color: white; 
+    margin-top: -640px;
+    height: 850px;
+} 
+
+#boxparagrafo-3 {
+    border: 3px dotted #800080;
+    float: left;
+    margin-left: 300px;
+    width: 800px;
+    margin-top: 200px;
+}
+
+#boxparagrafo-3 h2 {
+   font-size: 70px;
+   color: rgb(122, 122, 122);
+}
+
+#boxparagrafo-3 p {
+    font-size: 40px;
+    color: #454545;
+ }
+
+.fade-bro {opacity: 0; transform: translateY(10vh); transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.fade-bro.in-page {opacity:1; transform: translateY(0vh);}
+
+.fade-bro {opacity: 0; transform: translateY(10vh); transition: all 1s cubic-bezier(.215, .61, .355, 1)}
+.fade-bro.in-page {opacity:1; transform: translateY(0vh);}
+
+#box-3 img { 
+   float: right;
+   margin-right: 200px;
+   margin-top: -250px;
+   width: 180px;
+}
+
+.top-nav {
+    background-color: #AC3A31;
+    
+    }
+    
+    #title {
+    font-family: 'Comfortaa', 'cursive';
+    color: white;
+    font-size: 50px;
+    padding-top: 25px;
+    }
+    
+    section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AC3A31;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    }
+    
+    section li {
+    display: inline-block;
+    border-right:1px solid #AC3A31;
+    }
+    
+    section li:last-child {
+    border-right: none;
+    }
+    
+    section li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    section li a:hover {
+    text-decoration: underline;
+    }
+
+    .active {
+        background-color: #62140F;
+        border-radius: 10px;
+        }
+        
+        .active:hover {
+        text-decoration: none;
+        }
+    
+
+
+
+/* BOX 4 
+.box-4 {
+    margin-top: 200px;
+       
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.box-4 a {
+    
+   
+    font-size: 3em;
+    padding-block: 20px;
+    text-decoration: none;
+
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #0e22a4;
+    color: ghostwhite;
+}
+
+.box-4 a span {
+  
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+a:hover span {
+    color: rgb(255, 255, 255);
+   }
+   
+   a::before,
+   a::after {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   a::before {
+    content: "";
+    background: #000000;
+    width: 100%;
+    
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   a:hover::before {
+    transform: translate3d(100%, 0, 0);
+   } */
+   
+
+   /*RESPONSIVE*/
+   @media screen and (max-width:2000px) {
+    body {
+        overflow-x: hidden;
+     }
+     .title h1 {
+        font-size: 240px;
+     }
+
+    
+     .boxcosa {
+    
+
+        float: right;
+        padding-right: 100px;
+        
+    }
+    
+    .boxparagrafo {
+        
+    }
+    
+    .boxparagrafo p {
+        width: 100%;
+        padding-right: 100px;
+        color: rgb(87, 87, 87);
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    body {
+        overflow-x: hidden;
+     }
+     .title h1 {
+        font-size: 240px;
+     }
+    
+}
+
+@media screen and (max-width:900px) {
+    body {
+        overflow-x: hidden;
+     }
+     .title h1 {
+        border: 3px solid #050505;
+        font-size: 160px;
+     }
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        overflow-x: hidden;
+     }
+
+     .title h1 {
+        font-size: 80px;
+     }
+
+     .title h1 {
+        margin-top: 180px;
+     }
+
+}

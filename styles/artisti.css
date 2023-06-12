@@ -1,0 +1,718 @@
+body {
+
+background-color: rgb(242, 242, 242);
+margin: 0px;
+color: #000000;
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxbody {
+margin: 0 100px 0 100px;
+}
+
+/* NAV */
+.top-nav {
+    background-color: #AC3A31;
+    
+    }
+    
+    #title {
+    font-family: 'Comfortaa', 'cursive';
+    color: white;
+    font-size: 50px;
+    padding-top: 25px;
+    }
+    
+    section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AC3A31;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    }
+    
+    section li {
+    display: inline-block;
+    border-right:1px solid #AC3A31;
+    }
+    
+    section li:last-child {
+    border-right: none;
+    }
+    
+    section li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    section li a:hover {
+    text-decoration: underline;
+    }
+    
+    .active {
+    background-color: #62140F;
+    border-radius: 10px;
+    }
+    
+    .active:hover {
+    text-decoration: none;
+    }
+
+
+/*BOX ISCRIZIONI*/
+.boxsegui {
+    height: auto;
+}
+
+.boxsegui h3 {
+    font-size: 25px;
+}
+
+.boxsegui p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.boxsegui svg {
+    margin-top: 10px;
+    height: 50px;
+}
+
+/*BOX PLAYLIST*/
+.title-play {
+    /*border: 2px solid #AC3A31;*/
+
+    background-color: white;    
+}
+
+.title-play h2 {
+    font-family: 'Comfortaa', 'cursive';;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#playlist1 {
+   
+    background-color: white;
+    padding-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.play1 {
+    width: 300px;
+    height: 300px;
+    margin: 0 30px 30px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#playall {
+
+    width: 860px;
+    margin: 0 30px 30px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#indie {
+
+    width: 200px;
+    height: 200px;
+} 
+
+#punk {
+   
+    width: 200px;
+    height: 200px;
+} 
+#pop {
+   
+    width: 200px;
+    height: 200px;
+} 
+
+#electronic {
+
+    width: 200px;
+    height: 200px;
+} 
+
+.playlistbox h3 {
+    padding-top: 90px;
+   
+}
+
+.playlistbox a {
+    text-decoration: none;
+    color: white;
+}
+
+.play1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.play1 h3 {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 50px;
+}
+
+
+/* playlist background */
+
+    /* Button css */
+
+/*indie*/
+#myBtn {
+   background-color: transparent ;
+   width: 100px;
+   height: 50px;
+   border: 3px solid #AC3A31;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   transition: all 0.3s;
+   cursor: pointer;
+   font-size: 1em;
+   color: white;
+   font-weight: bold;
+}
+
+#myBtn:hover {
+    letter-spacing: 1px; 
+}
+
+/*punk*/
+#myBtnpunk {
+    background-color: transparent ;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #AC3A31;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+ }
+ 
+ #myBtnpunk:hover {
+     letter-spacing: 1px; 
+ }
+
+/*pop*/
+#myBtnpop {
+    background-color: transparent ;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #AC3A31;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+ }
+ 
+ #myBtnpop:hover {
+     letter-spacing: 1px; 
+ }
+
+/*electronic*/
+#myBtnelectronic {
+    background-color: transparent ;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #AC3A31;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+ }
+ 
+ #myBtnelectronic:hover {
+     letter-spacing: 1px; 
+ }
+
+
+
+
+ .logo img {
+    width: 700px;
+    margin: 20px 0 20px 0;
+ }
+
+
+
+ /*BOX ISCRIZIONI*/
+.boxsegui {
+    height: auto;
+    background-color: rgb(10, 46, 94);
+}
+
+.boxsegui h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding-top: 26px;
+}
+
+.boxsegui p {
+    font-size: 20px;
+   color: white;
+   font-family:'Montserrat', sans-serif ;
+   padding-bottom: 25px;
+}
+
+.boxsegui svg {
+    margin-right: 30px;
+}
+
+/*BOX GENERE ARTISTI*/
+.titlegenere {
+    background-color: white;
+}
+
+.titlegenere h2 {
+        font-family: 'Comfortaa', 'cursive';;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        border: 2px solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+}
+
+#lineprova {
+    display: inline-block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+    height: 400;
+    overflow: auto; 
+}
+
+.wrapprova {
+    /*border: 2px solid red;*/
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+#prova h3 {
+    color: white;
+}
+
+#prova svg {
+    height: 20px;
+}
+
+.wrapprova h6 {
+    display: inline-block;
+}
+
+.wrapprova h3 {
+    margin-top: 80px;
+    opacity:0 ;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.wrapprova:hover h3 {
+    opacity: 1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    transition: all .2s ease-in-out;
+}
+
+.wrapprova h6 {
+    opacity: 0;
+    font-size: 25px
+}
+
+.wrapprova:hover h6 {
+    opacity: 1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+#prova img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#prova h3 {
+    position: absolute;
+    margin-top: -150px;
+    width: 250px;
+}
+
+#prova h6 {
+    position: absolute;
+    margin-top: 139px;
+    width: 250px;
+    margin-left: -250px;
+}
+
+/*GENERE SPECIFICO*/
+    /*INDIE*/
+#titleindie {
+    background-color: rgb(229, 189, 91);
+    color: rgb(31, 48, 29);
+}
+
+#lineindie {
+    display: inline-block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+    height: 400;
+    overflow: auto;
+    background-color: rgb(229, 189, 91);
+}
+
+
+  
+
+        /*foto artisti indie*/
+        #pardoxheygregg img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        
+        #pardoxheygregg h3 {
+            position: absolute;
+            margin-top: -150px;
+            width: 250px;
+        }
+        
+        #pardoxheygregg h6 {
+            position: absolute;
+            margin-top: 139px;
+            width: 250px;
+            margin-left: -250px;
+        }
+
+    /*PUNK*/
+#titlepunk {
+    background-color: rgb(167, 80, 113);
+    color: black;
+}
+
+#linepunk {
+    display: inline-block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+    height: 400;
+    overflow: auto;
+    background-color: rgb(167, 80, 113);
+}
+
+        /*foto artisti punk*/
+        #fredruk_02 img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        
+        #fredruk_02 h3 {
+            position: absolute;
+            margin-top: -150px;
+            width: 250px;
+        }
+        
+        #fredruk_02 h6 {
+            position: absolute;
+            margin-top: 139px;
+            width: 250px;
+            margin-left: -250px;
+        }
+
+
+
+    /*POP*/
+#titlepop {
+    background-color: rgb(136, 186, 227);
+    color: rgb(15, 122, 109);
+}
+
+#linepop {
+    display: inline-block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+    height: 400;
+    overflow: auto;
+    background-color: rgb(136, 186, 227);
+}
+
+        /*foto artisti pop*/
+        #sanchio img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        
+        #sanchio h3 {
+            position: absolute;
+            margin-top: -150px;
+            width: 250px;
+        }
+        
+        #sanchio h6 {
+            position: absolute;
+            margin-top: 139px;
+            width: 250px;
+            margin-left: -250px;
+        }
+
+    /*ELECTRONIC*/
+#titleelectronic {
+    background-color: rgb(92, 84, 188);
+    color: rgb(255, 190, 59);
+}
+    
+#lineelectronic {
+    display: inline-block;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    align-items: center;        
+    justify-content: center;
+    overflow:scroll;
+    height: 400;
+    overflow: auto;
+    background-color: rgb(92, 84, 188);
+} 
+
+    /*foto artisti electronic*/
+    #souflow img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    
+    #souflow h3 {
+        position: absolute;
+        margin-top: -150px;
+        width: 250px;
+    }
+    
+    #souflow h6 {
+        position: absolute;
+        margin-top: 139px;
+        width: 250px;
+        margin-left: -250px;
+    }
+
+
+/*BOX UNISCITI*/
+
+#titlejoin {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 40px;
+}
+
+#titlejoin h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: rgb(60, 60, 60);
+    padding-top: 26px;
+}
+
+#titlejoin p {
+    font-size: 20px;
+   color: rgb(60, 60, 60);
+   font-family:'Montserrat', sans-serif ;
+   margin-bottom: 25px;
+}
+
+#aunisciti {
+    color: rgb(60,60,60);
+    border: 1px solid rgb(60,60,60);
+    background-color: transparent;
+    padding: 5px;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif ;
+}
+  
+#aunisciti:hover  {
+   color: #AC3A31;
+   border: 1px solid #AC3A31;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #AC3A31;
+    padding-bottom: 70px;
+    display: block;
+  }
+
+  #flexFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #BDBDBD;
+}
+
+footer h3 {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:1200px) {
+
+    .boxbody {
+        margin: 0;
+    }
+
+    .logo img {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .allartist .flex {
+        grid-auto-columns: calc((100%/2));
+    }
+
+    footer {
+        font-size: 12px;
+      }
+
+      .logo img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .allartist .flex {
+        grid-auto-columns: calc((100%/1));
+    }
+
+    footer {
+        font-size: 10px;
+      }
+
+      .logo img {
+        width: 400px;
+      }
+
+      .boxsegui h3 {
+        font-size: 20px;
+    }
+    
+    .boxsegui p {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 10px;
+      }
+    
+      #flexFooter {
+        display: block;
+        justify-content: space-evenly;
+        color: #BDBDBD;
+    }
+    
+      footer h3 {
+        padding-top: 30px;
+        margin-bottom: 10px;
+      }
+    
+    
+      footer a {
+      text-decoration: none;
+      margin-top: 0px;
+    }
+    
+    footer {
+      background-color: #AC3A31;
+      padding-bottom: 20px;
+      display: block;
+    }
+    
+}
+

@@ -1,0 +1,352 @@
+body {
+    display: flexbox;
+    background-color: rgb(242, 242, 242);
+    margin: 0px;
+    color: #000000;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .boxbody {
+    margin: 0 100px 0 100px;
+    }
+    
+    /*  nav  */
+    .top-nav {
+    background-color: #AC3A31;
+    
+    }
+    
+    #title {
+    font-family: 'Comfortaa', 'cursive';
+    color: white;
+    font-size: 50px;
+    padding-top: 25px;
+    }
+    
+    section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AC3A31;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    }
+    
+    section li {
+    display: inline-block;
+    border-right:1px solid #AC3A31;
+    }
+    
+    section li:last-child {
+    border-right: none;
+    }
+    
+    section li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    section li a:hover {
+    text-decoration: underline;
+    }
+    
+    .active {
+    background-color: #62140F;
+    border-radius: 10px;
+    }
+    
+    .active:hover {
+    text-decoration: none;
+    }
+
+
+    /* Box button iscriviti */
+  .boxcarica {
+    background-image:url(https://bestr.it/filemanager/show/f96998dc-874f-4d45-acb5-c375e894346d.png);
+    height: 520px;
+    background-repeat: no-repeat;
+  }  
+
+  .boxcarica .carica {
+    text-align: left;
+    color: rgb(87, 87, 87);
+    padding-left: 80px;
+    padding-top: 130px;
+    font-size: 25px;
+  }
+
+  .caricalog {
+    margin-block: 30px;
+  }
+
+  
+
+  .cta {
+    margin-top: 40px;
+    position: relative;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: rgb(218, 167, 167);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #AC3A31;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #AC3A31;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: rgb(218, 167, 167);
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+
+  /*MODAL*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+ /* Modal Content */
+ 
+
+        /*  animazioni */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+        /* bottone di chiusura */
+
+
+
+
+/*interno modal*/
+
+.close {
+    display: none;
+}
+
+.boxmodal {
+  
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: #AC3A31 0 0 8px; 
+}
+
+.newsletter2 {
+  height: 370px;
+  border-radius: 20px;
+  
+}
+
+.newsletter2 h3 {
+
+
+
+  padding-top: 10px;
+  color: #2B2B2F; 
+}
+
+.newsletter2 input{
+  margin: 20px;
+  display: flex;
+  width: 250px;
+  height: 42px;
+  padding: 0 0 0 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+#filechoose {
+  padding-top: 10px;
+}
+
+.newsletter2 input:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 1px #2B2B2F;
+  background-color: transparent;
+}
+
+.newsletter2 a {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+
+  width: 230px;
+  text-decoration: none;
+  background: linear-gradient(180deg, #AC3A31 0%, #c2342a 50%, #aa4e45 100%);
+  box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 5px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+
+
+/*BOXWHY*/
+.boxwhyclass {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 70px;
+  display: block;
+}
+
+#boxwhy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #000000;
+}
+
+.boxwhyclass h3 {
+padding-top: 60px;
+margin-bottom: 20px;
+}
+
+.boxwhyclass p {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/*BOX ISCRIVITI*/
+
+
+/*FOOTER*/
+footer {
+  background-color: #AC3A31;
+  padding-bottom: 70px;
+  display: block;
+}
+
+#flexFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #BDBDBD;
+}
+
+footer h3 {
+padding-top: 60px;
+margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:1200px) {
+
+  .boxbody {
+      margin: 0;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+
+  footer {
+      font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+ 
+
+  footer {
+      font-size: 10px;
+    }
+
+    .boxcarica .carica {
+      padding-left: 20px ;
+      padding-top: 130px;
+      font-size: 25px;
+    }
+
+}

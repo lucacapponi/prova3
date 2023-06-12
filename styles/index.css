@@ -1,0 +1,619 @@
+body {
+  
+  background-color: rgb(242, 242, 242);
+  margin: 0px;
+  color: #000000;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  .boxbody {
+  margin: 0 100px 0 100px;
+  }
+
+/*  nav  */
+/*DA METTERE NEL FOGLIO VERO*/
+.top-nav {
+  background-color: #AC3A31;
+  
+}
+
+#title {
+  font-family: 'Comfortaa', 'cursive';
+  color: white;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #AC3A31;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+section li {
+  float: left;
+  border-right:1px solid #AC3A31;
+}
+
+section li:last-child {
+  border-right: none;
+}
+
+section li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+section li a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #62140F;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+/*  MAIN   */ 
+.boxnav {
+    background-color: rgb(255, 255, 255);
+    margin-top: -50px;
+}
+
+.boxnav h3 {
+    font-family: 'Comfortaa', 'cursive';;
+}
+
+    /* box img main  FARE SLIDER*/
+    ul, li, a {
+      display: inline-block;
+      color: #AC3A31;
+      border-radius: 10px 10px 10px 10px;
+  }
+
+.title-h1 h1 {
+  font-family: 'Comfortaa', 'cursive';;
+  font-size: 25px;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.title-h1{
+  background-color: white;
+}
+
+  .wrapper {
+    position: relative;
+    background-color: white;
+    padding-top: 40px;
+    
+}
+.wrapper .carousel {
+    gap: 0px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/5));
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel .card {
+    list-style: none;
+    border-radius: 8px;
+}
+
+.carousel.dragging {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.card .img img {
+    width: 180px;
+    margin-top: 0px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper svg {
+    height: 30px;
+    width: 30px;
+    background-color: #b0b0b0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.25s;
+}
+
+.wrapper svg:first-child{
+    left: -20px;
+}
+
+.wrapper svg:last-child{
+    right: -12px;
+}
+
+.wrapper svg:hover {
+  height: 40px;
+  width: 40px;
+  transition: 0.25s;
+}
+
+
+
+
+
+    /*button scopri tuti artisti*/
+
+    /*DA METTERE NEL FOGLIO VERO*/
+
+.comandi {
+  background-color: white;
+}
+
+#artisti {
+    margin-top: 40px;
+    margin-bottom: 31px;
+    color: black;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(242, 242, 242);
+    box-shadow: #AC3A31 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    padding: 17px 40px;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'cursive';;
+}
+  
+#artisti:hover  {
+    letter-spacing: 3px;
+    background-color: #AC3A31;
+    color:hsl(0, 0%, 100%);
+    box-shadow:#AC3A31 0px 7px 29px 0px;
+    font-family: 'Comfortaa', 'cursive';;
+}
+  
+#joinin {
+    margin-left: 10px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'cursive';
+    font-weight: bold;
+}
+
+#joinin:hover {
+    text-decoration: underline;
+    color: #AC3A31;
+    font-weight: bold;
+}
+
+/*LOGO*/
+.logoscritta img{
+    width: 500px;
+}
+
+.logoscritta {
+   padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+/*LASCIATI ISPIRARE - plylist spotify */
+#spotifybox {
+    background-color: #000000;
+    color: white;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+#spotifybox p {
+    margin-top: 20px ;
+    font-size:20px;
+    word-spacing: 3px;
+}
+
+#spotifybox iframe  {
+  
+  margin-top: 20px;
+  height:80px;
+  margin-bottom: 20px;
+}
+
+#spotifybox h2{
+  padding-top: 20px;
+  
+  font-size: 30px;
+  font-family: 'Comfortaa', 'cursive';
+}
+
+
+
+/* NEWSLETTER */
+.newsletter {
+    margin-top: 0;
+    background-color: white;
+    font-family: 'Comfortaa', 'cursive';;
+}
+
+.newsletter h2{
+    padding-top: 100px;
+    margin-bottom:20px;
+}
+/* Button css */
+#myBtn {
+   margin-bottom: 100px;
+   width: 200px;
+   height: 50px;
+   border-radius: 50px;
+   border: 3px solid #AC3A31;
+   transition: all 0.3s;
+   cursor: pointer;
+   font-size: 1em;
+}
+
+#myBtn:hover {
+    background: #AC3A31;
+    color: white;
+    font-size: 1.5em; 
+    letter-spacing: 3px; 
+}
+
+   
+
+
+    /* FINESTRA MODAL */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+ /* Modal Content */
+ 
+
+        /*  animazioni */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+        /* bottone di chiusura */
+
+
+
+
+/*interno modal*/
+
+.close {
+    display: none;
+}
+
+.boxmodal {
+    background-color:rgb(255, 255, 255);
+    display: block;
+    width: fit-content;
+    height:530px;
+    border-radius: 20px;
+    margin-top: -50px;
+    margin-left: 350px;
+    margin-right: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: #4480FF 0 0 8px;
+}
+
+.boxmodal a {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+  visibility: hidden;
+  color: #4480FF;
+  text-decoration: underline;
+}
+
+.newsletter2 {
+  border-radius: 20px;
+}
+
+.newsletter2 h3 {
+  padding-top: 10px;
+  color: #2B2B2F;
+  
+}
+
+.newsletter2 h5 {
+  color: #5F5D6A;
+  margin-top: 20px;
+  padding: 0 30px 0 30px;
+  margin-bottom: 20px;
+}
+
+.newsletter2 input{
+  width: 250px;
+  height: 42px;
+  padding: 0 0 0 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.newsletter2 input:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 1px #2B2B2F;
+  background-color: transparent;
+}
+
+.newsletter2 a {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+ 
+  width: 230px;
+  text-decoration: none;
+  background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+  box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+  border-radius: 5px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.newsletter2 a:hover {
+  background-color: #0550ED;
+}
+  /*FOOTER*/
+  footer {
+    background-color: #AC3A31;
+    padding-bottom: 70px;
+    display: block;
+  }
+
+  #flexFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #BDBDBD;
+}
+
+footer h3 {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+
+/*RESPONSIVNESS*/
+/*RESPONSIVE*/
+@media screen and (max-width:1200px) {
+  .wrapper .carousel {
+      grid-auto-columns: calc((100%/3));
+  }
+
+  .boxbody {
+    margin: 0;
+  }
+
+  .wrapper svg:first-child{
+    left: 10px;
+  }
+
+.wrapper svg:last-child{
+    right: 10px;
+  }
+
+  .boxmodal iframe {
+    display: none;
+  }
+
+
+  .boxmodal {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 400px;
+  }
+  
+
+  .boxmodal a {
+    visibility: visible;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    overflow-x: hidden;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  .wrapper .carousel {
+      grid-auto-columns: calc((100%/2));
+  }
+  .logoscritta img {
+    width: 300px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .boxmodal {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  
+
+  .boxmodal a {
+    visibility: visible;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  #flexFooter {
+    display: block;
+    justify-content: space-evenly;
+    color: #BDBDBD;
+}
+
+  footer h3 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+
+  footer a {
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+footer {
+  background-color: #AC3A31;
+  padding-bottom: 20px;
+  display: block;
+}
+
+}
+
+@media screen and (max-width:600px) {
+  .wrapper .carousel {
+      grid-auto-columns: calc((100%/1));
+  }
+  .logoscritta img {
+    width: 250px;
+  }
+  
+  #joinin{
+    margin-bottom: 20px;
+  }
+
+  .boxmodal {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
+    overflow-x: hidden;
+  }
+  
+
+  .boxmodal a {
+    visibility: visible;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  #flexFooter {
+    display: block;
+    justify-content: space-evenly;
+    color: #BDBDBD;
+}
+
+  footer h3 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+
+  footer a {
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+footer {
+  background-color: #AC3A31;
+  padding-bottom: 20px;
+  display: block;
+}
+
+
+}
+
+
+@media screen and (max-width:500px) {
+  
+}
+
+  
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles/about2.css">
+</head>
+<body>
+    <div class="title">
+        <h1>ALMA <br> MUSIC</h1>
+    </div>
+
+    <div class="panel">
+        <h2 class="watch fade-in">Music by students</h2>
+        <h3 class="watch fade-in">for students</h3>
+    </div>
+
+    <div class="box-1">
+        <div id="text-1">
+            <h2 class="watch fade-in">La forza della community </h2>
+            <p class="watch fade-in">Alma Music offre la possiblità a tutti gli studenti appassionati di musica di scoprire nuove canzoni e nuovi artisti direttamente tra gli studenti della loro stessa università.</p>
+            <h3 class="watch fade-in">Scoprire e far scoprire nuove canzoni</h3>
+        </div>
+        <img src="images/logouniboartisti copia.png" alt="" class="watch fade-in" width="400px">
+    </div>
+
+    <div class="box-2">
+        <div id="text-2">
+            <h2 class="watch fade-in">Non lasciarti condizionare dal genere musicale</h2>
+            <h3 class="watch fade-in">Ascolta la playlist con i brani più popolari di tutti i musicisiti iscritti al sito</h3>
+        </div>
+    </div>
+
+    <div id="box-3">
+        <div id="boxparagrafo-3">
+          <p class="watch fade-in">L'accesso al sito è consentito esclusivamente agli studenti dell'Alma Mater</p>
+        </div>   
+          <img src="images/bologna-torri.png" alt="" class="watch fade-in">   
+      </div>
+
+      <div class="box-4">
+        <div id="text-4">
+            <p>Torna alla <a href="index.html">HOME</a></p>
+        </div>
+      </div>
+
+    <!-- JS di apple-->
+    <script>
+        var elements_to_watch = document.querySelectorAll('.watch');
+
+        var callback = function(items) {
+          items.forEach ((item) => {
+            if(item.isIntersecting) {
+              item.target.classList.add("in-page");
+            } else {
+              item.target.classList.remove ("in-page");
+            }
+          });
+         }
+          
+        var observer = new IntersectionObserver(callback, {threshold:0.6});
+
+        elements_to_watch.forEach((element) => {
+          observer.observe(element);
+      });
+      </script>
+</body>
+</html>

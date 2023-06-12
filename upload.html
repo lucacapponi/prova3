@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/upload.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="boxbody">
+        
+    <div class="nav">
+        <ul>
+            <li id="uploadnav">UPLOAD</li>
+            <li id="homenav"> <a href="index.html"> Home </a> </li>
+            <li id="artistinav"> <a href="artisti.html"> Artisti </a></li>
+            <li id="aboutnav"> <a href="about2.html"> About </a></li>
+        </ul>
+    </div>
+<hr>
+    <div id="header">
+        <h1>ALMAMUSIC</h1>
+        <p>Fai sentire a tutti quello di cui sei capace</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_JraDV684ypEtyK1eOpJzOauBrz1YJmqWPA2iJTk2-0vs1g/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer"> Unisciti ad AlmaMusic </a> 
+        <img src="images/bologna-torri.png" alt="">
+    </div>
+
+    <div id="boxslogan" class="slogan">
+        <div class="phrase">
+            <h2>Music by students for students.</h2>
+            <p>Carica ora il tuo profilo per inizare a far senitre a tutti le tue canzoni</p>
+        </div>
+        <img src="images/Screenshot 2023-06-09 alle 22.48.42.png" alt="">
+     </div>
+<hr>
+    <div id="box1" class="container">
+        <div class="panel">
+            <h2>Fai crescere i tuoi numeri</h2>
+            <p>Aumentare i propri ascoltatori non è mai stato così facile. Tutto quello che devi fare è condividere il tuo link Spotify o SoundCloud.</p>
+        </div>
+        <img src="images/spotify-music.gif" alt="">
+    </div>
+<hr>
+    <div id="box2" class="container">
+        <div class="panel">
+            <h2>Community universitaria</h2>
+            <p>Alma Music permette a tutti i musicisti iscritti all'Alma Mater di caricare i propri lavori e di condividerli con il resto del'università. </p>
+        </div>
+        <img src="images/uploadgif1.gif" alt="">
+    </div>
+<hr>
+    <div id="box3" class="container">
+        <div class="panel">
+            <h2>Trova artisti con cui collaborare</h2>
+            <p>Cerca gli artisti più simili a te ed inizia una collaborazione</p>
+        </div>
+        <img src="images/featuring.jpeg" alt="" id="boxcontrario">
+    </div>
+</div>
+<hr>
+<div id="partecipa">
+    <h2 style="visibility: hidden;">Unisciti alla piattaforma</h2>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_JraDV684ypEtyK1eOpJzOauBrz1YJmqWPA2iJTk2-0vs1g/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" id="account"> Crea un account </a> 
+</div>
+
+       
+</div>
+        
+<!--js del join ins-->
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+    </script>
+    
+    <script>
+        const openModalBtn = document.getElementById("open-modal");
+        const closeModalBtn = document.getElementById("close-modal");
+        const modal = document.getElementById("modal")
+
+        openModalBtn.addEventListener("click", openModal);
+        closeModalBtn.addEventListener("click", closeModal);
+
+        function openModal (){
+            console.log ("apro modal");
+            modal.classList.remove ("hidden")
+        }
+        function closeModal () {
+            console.log("chiudo modal")
+            modal.classList.add("hidden")
+        }
+    </script>
+</body>
+</html>

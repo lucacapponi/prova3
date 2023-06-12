@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Music/Upload</title>
+    <link rel="stylesheet" href="styles/upload2.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    
+    <script src="upload2.js" defer></script>
+</head>
+<body>
+    <!--header con alm4music + button modal + cose sopra-->
+<div class="boxbody"> 
+    <section class="top-nav">
+        <div id="title">
+          ALMA MUSIC
+        </div>
+        <div class='menu-button'></div>
+      </label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="artisti.html">Artisti</a></li>
+        <li><a  class="active">Upload</a></li>
+        <li ><a href="about.html">About</a></li>
+      </ul>
+    </section>
+
+    <!--ISCRIZIONE A NEWSLETTER-->
+    <div class="boxcarica">
+        <div class="carica">
+            <h2 class="caricalog">CARICA IL TUO PROFILO</h2>
+            <h3>Condividi il tuo link Spotify o Soundcloud</h3>
+            <button class="cta" id="myBtn">
+                <span>Unisiciti a noi</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+        <!-- finestra MODAL -->
+    <div id="myModal" class="modal">
+        <!--Box MODAL -->
+        <div class="boxmodal">
+            <span class="close"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></span>
+            
+            <div class="newsletter2">
+                <h3>COMPLETA IL TUO PROFILO</h3>
+                <input type="text" placeholder="Nome" name="name" title="name"> 
+                <input type="text" placeholder="Link Spotify" name="name" title="name"> 
+                <input type="text" placeholder="Link Soundcloud" name="name" title="name"> 
+                <input type="file" name="filename" id="filechoose"> 
+                <br>
+                <a href="upload2.html">Carica ora </a>
+            </div>
+
+        </div>
+    </div>
+        <!--js della newsletter-->
+            <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function() {
+                modal.style.display = "block";
+                }
+
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+                
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+                </script>
+                
+                <script>
+                    const openModalBtn = document.getElementById("open-modal");
+                    const closeModalBtn = document.getElementById("close-modal");
+                    const modal = document.getElementById("modal")
+            
+                    openModalBtn.addEventListener("click", openModal);
+                    closeModalBtn.addEventListener("click", closeModal);
+            
+                    function openModal (){
+                        console.log ("apro modal");
+                        modal.classList.remove ("hidden")
+                    }
+                    function closeModal () {
+                        console.log("chiudo modal")
+                        modal.classList.add("hidden")
+                    }
+                </script> 
+
+    <!--
+    <div id="boxwhy" class="boxwhyclass">
+        <div class="why">
+            <h3 class="whytitle">ALMA MUSIC</h3>
+            
+        </div>
+
+        <div class="why">
+            <h3 class="whytitle">COMMUNITY</h3>
+            <p class="whyp">Condividi il tuo lavoro con gli studenti dell'Alma Mater.</p>
+        </div>
+
+        <div class="why">
+            <h3 class="whytitle">FACILE</h3>
+            <p class="whyp">Ti basterà caricare il link Spotify o SoundCLoud.</p>
+        </div>
+    </div> -->
+
+                <!--box iscriviti-->
+    <div>
+        <div>
+            
+        </div>
+    </div>
+
+<!--FOOTER-->
+    <footer id="flexFooter">
+        <div class="footerCol">
+            <a>
+                <h3 class="footerTitles" style="color: white; font-weight: 600;">AlmaMusic</h3>
+            </a>
+            <div class="footerLink">
+                <a href="https://app.termly.io/document/privacy-policy/a16a94c6-de73-461e-9ae4-4a290822dbab" style="color: #ffffff" target="_blank">Tutti gli artisti</a>
+            </div>
+
+            <div class="footerLink">
+                <a href="https://app.termly.io/document/terms-of-use-for-website/85dcd8d9-a036-4e48-ad63-af42b169a5b7" style="color: #ffffff" target="_blank">Unisciti ad Alma Music</a>
+            </div>
+        </div>
+        
+        <div class="footerCol">
+            <h3 class="footerTitles" style="color: white; font-weight: 600;">Policy</h3>
+            
+            <div class="footerLink">
+                <a href="https://app.termly.io/document/privacy-policy/a16a94c6-de73-461e-9ae4-4a290822dbab" style="color: #ffffff" target="_blank">Privacy Policy</a>
+            </div>
+        
+            <div class="footerLink">
+                <a href="https://app.termly.io/document/terms-of-use-for-website/85dcd8d9-a036-4e48-ad63-af42b169a5b7" style="color: #ffffff" target="_blank">Terms of Service</a>
+            </div>
+        
+        
+            <div class="footerLink">
+            <a></a><a style="color:#ffffff;" href="/what-is-wishroll">Community Guidelines</a> 
+            </div>
+        </div>
+        
+        <div class="footerCol">
+            <h3 class="footerTitles" style="color: white; font-weight: 600;">Find us on</h3>
+            <div class="footerLink">
+                <a href="https://www.instagram.com/kiwiwidget/" style="color: #ffffff" target="_blank">Instagram</a>
+            </div>
+            <div class="footerLink">
+                <a href="https://www.twitter.com/kiwiwidget/" style="color: #ffffff" target="_blank">Twitter</a>
+            </div>
+            <div class="footerLink">
+                <a href="https://www.tiktok.com/@kiwiwidget?lang=en" style="color: #ffffff" target="_blank">TikTok</a>
+            </div>
+        </div>
+        
+        <div class="footerCol">
+            <h3 class="footerTitles" style="color: white; font-weight: 600;">Contact Us</h3>
+            <div class="footerLink">
+                <a href="" style="color: #ffffff" target="_blank">almamusic@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
